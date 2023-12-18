@@ -1,0 +1,17 @@
+{
+  "targetDefaults": {
+    "build": {
+      "cache": true
+    },
+    "serve": {
+      "cache": true
+    },
+    "@nx/vite:test": {
+      "cache": true,
+      "inputs": ["default", "^default"]
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
+  }
+}
