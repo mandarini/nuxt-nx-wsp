@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   workspaceDir: '../../',
   srcDir: 'src',
   devtools: { enabled: true },
-  buildDir: '../../.vercel/output',
+  buildDir: '../../.nuxt',
   devServer: {
     host: 'localhost',
     port: 4200,
@@ -28,5 +28,8 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: 'vercel',
+    output:{
+      dir: '../../.vercel/output'
+    }
   },
 });
