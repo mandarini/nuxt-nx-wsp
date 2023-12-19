@@ -5,7 +5,6 @@ import { defineNuxtConfig } from 'nuxt/config';
 export default defineNuxtConfig({
   workspaceDir: '../../',
   srcDir: 'src',
-  buildDir: '../../dist/apps/vapp1/.nuxt',
   devtools: { enabled: true },
   devServer: {
     host: 'localhost',
@@ -27,11 +26,6 @@ export default defineNuxtConfig({
     plugins: [nxViteTsPaths()],
   },
   nitro: {
-    output: {
-      dir: '../../dist/apps/vapp1/.output',
-      publicDir: '../../dist/apps/vapp1/.output/public',
-      serverDir: '../../dist/apps/vapp1/.output/server',
-    },
     preset: 'vercel',
   },
 });
