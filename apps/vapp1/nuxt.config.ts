@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   workspaceDir: '../../',
   srcDir: 'src',
   devtools: { enabled: true },
-  buildDir: '../../.nuxt',
+  buildDir: '../../dist/apps/vapp1/.nuxt',
   devServer: {
     host: 'localhost',
     port: 4200,
